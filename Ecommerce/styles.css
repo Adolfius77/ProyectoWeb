@@ -761,3 +761,6 @@ body {
     margin: 0;
 }
 
+/* -------------------------------- Confirmación de Compra -------------------------------- */
+.confirmacion-wrapper {
+    max-width: 800px;
