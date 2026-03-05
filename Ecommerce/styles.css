@@ -879,9 +879,22 @@ body {
     text-align: left;
     font-weight: bold;
 }
-.texto-lara{
-   -webkit-text-fill-color: black;
+.texto-nombre{
+    
+-webkit-text-fill-color: black;
+margin: 0;
 }
-.texto-lara p > p{
-   -webkit-text-fill-color: gray;
+
+.texto-id{
+    -webkit-text-fill-color: #999;
+
+}
+.info-proyecto{
+    margin-top: 40px;
+    text-align: left;
+    border: 15px solid rgb(219, 234, 254) ;
+    border-radius: 15px;
+    height: 200px;
+    
+    background-color: rgb(219,234,254) ;
 }
