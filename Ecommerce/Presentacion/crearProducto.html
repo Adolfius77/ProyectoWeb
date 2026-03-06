@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../stylesAdmin.css">
 </head>
 <body>
-    <!-- Barra Superior -->
     <header class="barra-superior">
         <div class="header-left">
             <a href="#" class="logo-link">
@@ -27,26 +26,24 @@
         </div>
     </header>
 
-    <!-- Contenedor Principal -->
     <div class="container">
-        <!-- Menú Lateral -->
         <aside class="menu-lateral">
             <nav>
                 <ul>
                     <li>
-                        <a href="#" class="menu-item">
+                        <a href="indexAdmin.html" class="menu-item">
                             <img src="../imgs/inicio.png" alt="Inicio" class="menu-icon">
                             <span>Inicio</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-item">
+                        <a href="gestionUsuariosAdmin.html" class="menu-item">
                             <img src="../imgs/perfil.png" alt="Usuarios" class="menu-icon">
                             <span>Gestión de usuarios</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-item">
+                        <a href="gestionCatalogo.html" class="menu-item">
                             <img src="../imgs/catalogo.png" alt="Catálogo" class="menu-icon">
                             <span>Gestión de catálogo</span>
                         </a>
@@ -64,7 +61,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu-item active">
+                        <a href="crearProducto.html" class="menu-item active">
                             <img src="../imgs/perfil.png" alt="Admin" class="menu-icon">
                             <span>Administrador</span>
                         </a>
@@ -73,7 +70,6 @@
             </nav>
         </aside>
 
-        <!-- Contenido Principal -->
         <main class="contenido">
             <div class="producto-wrapper">
                 <div class="producto-header">
@@ -84,19 +80,16 @@
                 <form class="producto-form">
                     <div class="form-content">
                         <div class="form-fields">
-                            <!-- Nombre del producto -->
                             <div class="campo-producto">
                                 <label for="nombre">Nombre del producto</label>
                                 <input type="text" id="nombre" placeholder="Ej. Camiseta Algodón Premium">
                             </div>
 
-                            <!-- Descripción -->
                             <div class="campo-producto">
                                 <label for="descripcion">Descripción</label>
                                 <textarea id="descripcion" rows="4" placeholder="Describe las características del producto..."></textarea>
                             </div>
 
-                            <!-- Precio y Cantidad -->
                             <div class="campos-fila">
                                 <div class="campo-producto">
                                     <label for="precio">Precio</label>
@@ -108,14 +101,12 @@
                                 </div>
                             </div>
 
-                            <!-- Botones -->
                             <div class="botones-producto">
-                                <button type="button" class="btn-cancelar">Cancelar</button>
+                                <a href="gestionCatalogo.html" class="btn-cancelar">Cancelar</a>
                                 <button type="submit" class="btn-añadir">Añadir producto</button>
                             </div>
                         </div>
 
-                        <!-- Área de imagen -->
                         <div class="imagen-upload">
                             <div class="imagen-placeholder">
                                 <div class="imagen-icono">🖼️</div>
@@ -128,7 +119,6 @@
         </main>
     </div>
 
-    <!-- Pie de Página -->
     <footer class="pie-pagina">
         <p>Aplicaciones Web – Unidad 2</p>
     </footer>

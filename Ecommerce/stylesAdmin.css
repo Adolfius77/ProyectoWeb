@@ -11,7 +11,6 @@ body {
     height: 100vh;
 }
 
-/* Barra superior */
 .barra-superior {
     background-color: #f5f5f5;
     border-bottom: 2px solid #ccc;
@@ -70,7 +69,6 @@ body {
     object-fit: contain;
 }
 
-/* Contenedor principal */
 .container {
     display: flex;
     flex: 1;
@@ -78,7 +76,6 @@ body {
     background-color: #fff;
 }
 
-/* Menú lateral */
 .menu-lateral {
     width: 200px;
     background-color: #f9f9f9;
@@ -130,7 +127,6 @@ body {
     margin-left: -10px;
 }
 
-/* Contenido principal */
 .contenido {
     flex: 1;
     padding: 30px;
@@ -143,7 +139,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* ===== PAGE HEADER ===== */
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -151,7 +146,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* ===== BARRA DE BÚSQUEDA ===== */
 .search-container {
     position: relative;
 }
@@ -175,7 +169,6 @@ body {
     color: #999;
 }
 
-/* ===== TABLA PEDIDOS ADMIN ===== */
 .pedidos-wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -219,7 +212,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Estados */
 .estado-pedido {
     display: inline-block;
     font-size: 14px;
@@ -238,7 +230,6 @@ body {
     color: #2e7d32;
 }
 
-/* Botón Actualizar */
 .btn-actualizar {
     color: #007bff;
     text-decoration: none;
@@ -250,7 +241,6 @@ body {
     text-decoration: underline;
 }
 
-/* ===== PAGINACIÓN ===== */
 .pagination-container {
     display: flex;
     justify-content: space-between;
@@ -290,7 +280,6 @@ body {
     cursor: not-allowed;
 }
 
-/* Pie de página */
 .pie-pagina {
     background-color: #f5f5f5;
     border-top: 2px solid #ccc;
@@ -300,7 +289,6 @@ body {
     color: #666;
 }
 
-/* ===== TABLA RESEÑAS ADMIN ===== */
 .resenas-wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -352,7 +340,6 @@ body {
     white-space: nowrap;
 }
 
-/* Estrellas de calificación */
 .estrellas {
     display: inline-flex;
     gap: 2px;
@@ -376,7 +363,6 @@ body {
     font-size: 13px;
 }
 
-/* Botón Eliminar */
 .btn-eliminar-resena {
     color: #d63031;
     text-decoration: none;
@@ -388,7 +374,6 @@ body {
     text-decoration: underline;
 }
 
-/* ===== CREAR PRODUCTO ===== */
 .producto-wrapper {
     max-width: 900px;
     margin: 0 auto;
@@ -477,6 +462,8 @@ body {
     border-radius: 6px;
     font-size: 14px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-cancelar:hover {
@@ -498,7 +485,6 @@ body {
     background-color: #0056b3;
 }
 
-/* Área de imagen */
 .imagen-upload {
     width: 200px;
     flex-shrink: 0;
@@ -532,7 +518,347 @@ body {
     font-size: 14px;
 }
 
-/* ===== RESPONSIVE ===== */
+.usuarios-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.usuarios-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.usuarios-header h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.usuarios-header .subtitulo {
+    color: #999;
+    font-size: 14px;
+}
+
+.tabla-usuarios-container {
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabla-usuarios thead {
+    border-bottom: 2px solid #eee;
+}
+
+.tabla-usuarios th {
+    padding: 16px 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    font-size: 13px;
+}
+
+.tabla-usuarios td {
+    padding: 20px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+    vertical-align: middle;
+}
+
+.tabla-usuarios tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.estado-usuario {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.estado-activo {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.estado-inactivo {
+    background-color: #f5f5f5;
+    color: #666;
+}
+
+.acciones-celda {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn-cambiar-estado {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-cambiar-estado:hover {
+    text-decoration: underline;
+}
+
+.btn-eliminar-usuario {
+    color: #d63031;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-eliminar-usuario:hover {
+    text-decoration: underline;
+}
+
+.catalogo-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.catalogo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.catalogo-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.btn-crear-producto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-crear-producto:hover {
+    background-color: #0056b3;
+}
+
+.tabla-catalogo-container {
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.tabla-catalogo {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabla-catalogo thead {
+    border-bottom: 2px solid #eee;
+}
+
+.tabla-catalogo th {
+    padding: 16px 15px;
+    text-align: left;
+    font-weight: 500;
+    color: #666;
+    font-size: 13px;
+}
+
+.tabla-catalogo td {
+    padding: 18px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+    vertical-align: middle;
+}
+
+.tabla-catalogo tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.categoria-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.categoria-link:hover {
+    text-decoration: underline;
+}
+
+.acciones-catalogo {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-editar,
+.btn-eliminar {
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-editar:hover,
+.btn-eliminar:hover {
+    opacity: 0.7;
+}
+
+.editar-producto-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.editar-producto-header {
+    margin-bottom: 30px;
+}
+
+.editar-producto-header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.editar-producto-header .subtitulo {
+    color: #999;
+    font-size: 14px;
+}
+
+.editar-producto-form {
+    width: 100%;
+}
+
+.imagen-editar-container {
+    margin-bottom: 25px;
+}
+
+.imagen-editar-placeholder {
+    width: 100%;
+    height: 120px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    background-color: #fafafa;
+}
+
+.imagen-editar-placeholder:hover {
+    border-color: #007bff;
+}
+
+.imagen-editar-placeholder .imagen-icono {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #999;
+}
+
+.imagen-editar-placeholder span {
+    color: #007bff;
+    font-size: 14px;
+}
+
+.campo-editar {
+    margin-bottom: 20px;
+}
+
+.campo-editar label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.campo-editar input,
+.campo-editar textarea,
+.campo-editar select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.campo-editar input:focus,
+.campo-editar textarea:focus,
+.campo-editar select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.campo-editar select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    padding-right: 40px;
+}
+
+.campos-fila-editar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.botones-editar {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.btn-cancelar-editar {
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-cancelar-editar:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-actualizar {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-actualizar:hover {
+    background-color: #0056b3;
+}
+
 @media (max-width: 768px) {
     .menu-lateral {
         width: 180px;

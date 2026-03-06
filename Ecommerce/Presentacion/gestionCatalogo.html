@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos Admin - Ecommerce</title>
+    <title>Gestión de Catálogo - Ecommerce</title>
     <link rel="stylesheet" href="../stylesAdmin.css">
 </head>
 <body>
@@ -43,13 +43,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="gestionCatalogo.html" class="menu-item">
+                        <a href="gestionCatalogo.html" class="menu-item active">
                             <img src="../imgs/catalogo.png" alt="Catálogo" class="menu-icon">
                             <span>Gestión de catálogo</span>
                         </a>
                     </li>
                     <li>
-                        <a href="pagPedidosAdmin.html" class="menu-item active">
+                        <a href="pagPedidosAdmin.html" class="menu-item">
                             <img src="../imgs/pedidos.png" alt="Pedidos" class="menu-icon">
                             <span>Gestión de pedidos</span>
                         </a>
@@ -71,53 +71,60 @@
         </aside>
 
         <main class="contenido">
-            <div class="pedidos-wrapper">
-                <div class="page-header">
-                    <h1>Pedidos (Admin)</h1>
-                    <div class="search-container">
-                        <input type="text" class="search-input" placeholder="Buscar pedidos...">
-                    </div>
+            <div class="catalogo-wrapper">
+                <div class="catalogo-header">
+                    <h1>Gestión de catálogo (Admin)</h1>
+                    <a href="crearProducto.html" class="btn-crear-producto">+ Crear producto</a>
                 </div>
 
-                <div class="tabla-pedidos-container">
-                    <table class="tabla-pedidos">
+                <div class="tabla-catalogo-container">
+                    <table class="tabla-catalogo">
                         <thead>
                             <tr>
-                                <th>Número de pedido</th>
-                                <th>Correo del cliente</th>
-                                <th>Estado</th>
-                                <th>Acción</th>
+                                <th>ID</th>
+                                <th>Producto</th>
+                                <th>Categoría</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1001</td>
-                                <td>cliente1@email.com</td>
-                                <td><span class="estado-pedido estado-pendiente">Pendiente</span></td>
-                                <td><a href="#" class="btn-actualizar">Actualizar</a></td>
+                                <td>1</td>
+                                <td>Auriculares Inalámbricos con Cancelación de Ruido</td>
+                                <td><a href="#" class="categoria-link">Electrónica</a></td>
+                                <td>$299.99</td>
+                                <td>45</td>
+                                <td class="acciones-catalogo">
+                                    <a href="editarProducto.html" class="btn-editar" title="Editar">✏️</a>
+                                    <a href="#" class="btn-eliminar" title="Eliminar">🗑️</a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>1002</td>
-                                <td>cliente2@email.com</td>
-                                <td><span class="estado-pedido estado-enviado">Enviado</span></td>
-                                <td><a href="#" class="btn-actualizar">Actualizar</a></td>
+                                <td>2</td>
+                                <td>Silla Ergonómica de Oficina</td>
+                                <td><a href="#" class="categoria-link">Muebles</a></td>
+                                <td>$199.50</td>
+                                <td>12</td>
+                                <td class="acciones-catalogo">
+                                    <a href="editarProducto.html" class="btn-editar" title="Editar">✏️</a>
+                                    <a href="#" class="btn-eliminar" title="Eliminar">🗑️</a>
+                                </td>
                             </tr>
                             <tr>
-                                <td>1003</td>
-                                <td>cliente3@email.com</td>
-                                <td><span class="estado-pedido estado-entregado">Entregado</span></td>
-                                <td><a href="#" class="btn-actualizar">Actualizar</a></td>
+                                <td>3</td>
+                                <td>Monitor UltraWide 34"</td>
+                                <td><a href="#" class="categoria-link">Electrónica</a></td>
+                                <td>$450.00</td>
+                                <td>8</td>
+                                <td class="acciones-catalogo">
+                                    <a href="editarProducto.html" class="btn-editar" title="Editar">✏️</a>
+                                    <a href="#" class="btn-eliminar" title="Eliminar">🗑️</a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-
-                <div class="pagination-container">
-                    <span class="pagination-info">Mostrando 1 a 3 de 15 pedidos</span>
-                    <div class="pagination-buttons">
-                        <button class="btn-pagination" disabled>Anterior</button>
-                        <button class="btn-pagination">Siguiente</button>
-                    </div>
                 </div>
             </div>
         </main>
