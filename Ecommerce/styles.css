@@ -127,7 +127,6 @@ body {
     font-size: 14px;
 }
 
-/* Contenido principal */
 .contenido {
     flex: 1;
     padding: 30px;
@@ -138,9 +137,9 @@ body {
 .contenido h1 {
     color: #333;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-/* Contenedor de Reseña */
 .resena-container {
     max-width: 800px;
     margin: 0 auto;
@@ -150,9 +149,9 @@ body {
     color: #999;
     font-size: 14px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
-/* Sección Producto a Reseñar */
 .producto-resena {
     margin-bottom: 40px;
     padding-bottom: 30px;
@@ -193,7 +192,6 @@ body {
     margin: 0;
 }
 
-/* Sección Calificación General */
 .calificacion-general {
     margin-bottom: 40px;
     padding-bottom: 30px;
@@ -300,17 +298,6 @@ body {
     color: #bbb;
 }
 
-.experiencia textarea:focus {
-    outline: none;
-    border-color: #007bff;
-}
-
-.contador-caracteres {
-    font-size: 12px;
-    color: #999;
-    margin-top: 8px;
-}
-
 /* Botones de acción */
 .botones-accion {
     display: flex;
@@ -319,8 +306,7 @@ body {
     margin-top: 30px;
 }
 
-.boton-cancelar,
-.boton-enviar {
+.boton-cancelar, .boton-enviar {
     padding: 10px 24px;
     border: none;
     border-radius: 4px;
@@ -350,7 +336,6 @@ body {
 }
 
 /* ---------------- Carrito de Compras ------------------------------- */
-/* Contenedor de Carrito */
 .carrito-wrapper {
     max-width: 1100px;
     margin: 0 auto;
@@ -518,6 +503,7 @@ body {
     color: #999;
     font-size: 13px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .proceso-contenedor {
@@ -583,7 +569,7 @@ body {
 
 .opcion-pago {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     padding: 15px;
     border: 1px solid #ddd;
@@ -592,50 +578,14 @@ body {
     cursor: pointer;
 }
 
-.opcion-pago input[type="radio"] {
-    display: none;
-}
-
-.opcion-pago input[type="radio"]:checked + .label-pago {
-    border-color: #007bff;
+.opcion-pago input {
+    margin: 0;
 }
 
 .label-pago {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    width: 100%;
     cursor: pointer;
-}
-
-.radio-custom {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ddd;
-    border-radius: 50%;
-    margin-top: 2px;
-}
-
-.opcion-pago input[type="radio"]:checked + .label-pago .radio-custom {
-    border-color: #007bff;
-    background: radial-gradient(circle, #007bff 0%, #007bff 4px, transparent 4px);
-}
-
-.label-pago > div {
-    flex: 1;
-}
-
-.label-pago strong {
-    display: block;
     font-size: 14px;
     color: #333;
-    margin-bottom: 4px;
-}
-
-.label-pago p {
-    font-size: 12px;
-    color: #999;
-    margin: 0;
 }
 
 .datos-tarjeta {
@@ -645,11 +595,11 @@ body {
     margin-bottom: 20px;
 }
 
-.datos-tarjeta .campo {
+.campo {
     margin-bottom: 15px;
 }
 
-.datos-tarjeta .fila-doble {
+.fila-doble {
     margin-bottom: 0;
 }
 
@@ -665,7 +615,7 @@ body {
     border-radius: 4px;
 }
 
-.resumen-pedido h2 {
+h2 {
     font-size: 16px;
     color: #333;
     margin-bottom: 20px;
@@ -855,11 +805,6 @@ body {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-volver:hover {
-    background-color: #0056b3;
 }
 
 /* -------------------------------- Gestión de Pedidos -------------------------------- */
@@ -902,10 +847,6 @@ body {
     color: #333;
 }
 
-.tabla-pedidos tbody tr:hover {
-    background-color: #f9f9f9;
-}
-
 .celda-pedido {
     display: flex;
     align-items: center;
@@ -939,4 +880,53 @@ body {
 .estado-entregado {
     background-color: #c8e6c9;
     color: #2e7d32;
+}
+
+/* -------------------------------- Panel de Administración -------------------------------- */
+.subtitulo {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.admin-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    object-fit: contain;
+}
+
+.admin-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.admin-card p {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.admin-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
 }
