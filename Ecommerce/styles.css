@@ -1157,7 +1157,7 @@ h2 {
     line-height: 1.5; 
     margin: 0;
 }
-------------------------------login-------------------------------
+/* ------------------------------login------------------------------- */
 .fondo-login {
     background-color: #f8f9fa;
     display: flex;
@@ -1172,6 +1172,7 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     text-align: center;
+    
 }
 .icono-login{
     width: 50px;
@@ -1269,7 +1270,7 @@ h2 {
     font-weight: 500;
     cursor: pointer;
 }
--------------------------------- Registro --------------------------------    
+/* ------------------------------registro------------------------------- */
 .tarjeta-registro{
     background-color: white;
     width: 100%;
@@ -1359,7 +1360,7 @@ h2 {
 .pie-login {
     text-align: center;
 }
-----perfil usuario ----
+/* ------------------------------perfil usuario------------------------------- */
 .pantalla-centrada {
     display: flex;
     justify-content: center;
@@ -1448,7 +1449,7 @@ h2 {
     padding: 20px;
 
 }
-------- catalago -----
+/* ------------------------------catalago------------------------------- */
 .catalogo-wrapper {
     max-width: 1200px;
     margin: 0 auto;
