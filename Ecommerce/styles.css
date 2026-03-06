@@ -1191,17 +1191,22 @@ body {
     text-align: center;
 }
 ----perfil usuario ----
-.contenedor-perfil{
+.pantalla-centrada {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa; 
+    padding: 40px 20px;
+}
+.contenedor-perfil {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 20px;
 }
 .tarjeta-perfil{
     background-color: white;
     width: 100%;
-    max-width: 800px;
-    padding: 40px;
+    max-width: 700px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     
