@@ -1387,7 +1387,7 @@ body {
     font-weight: 600;
     color: #333;
 }
-.img-catalago{
+.img-catalogo{
     width: 45px;
     height: 45px;
     object-fit: cover;
@@ -1403,14 +1403,14 @@ body {
     align-items: center;
     font-size: 20px;
 }
-link-detalles {
+.link-detalles {
     color: #1a73e8;
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
 }
 
-/* --- Botones de la tabla --- */
+
 .acciones-catalogo {
     display: flex;
     gap: 10px;
@@ -1441,4 +1441,36 @@ link-detalles {
 
 .btn-resena:hover {
     background-color: #f8f9fa;
+}
+.tabla-pedidos-container{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.tabla-pedidos td,
+.tabla-catalago td{
+    border-bottom:  1px solid black;
+    padding: 16px 20px;
+}
+.tabla-pedidos tbody tr:last-child td, 
+.tabla-catalogo tbody tr:last-child td {
+    border-bottom: none;
+}
+.tabla-catalago{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+tabla-catalogo th:nth-child(1) { width: 12%; } 
+.tabla-catalogo th:nth-child(2) { width: 35%; } 
+.tabla-catalogo th:nth-child(3) { width: 15%; } 
+.tabla-catalogo th:nth-child(4) { width: 13%; } 
+.tabla-catalogo th:nth-child(5) { width: 25%; } 
+
+
+.tabla-catalogo th, 
+.tabla-catalogo td {
+    padding: 16px 20px;
+    vertical-align: middle; 
+    border-left: none;     
+    border-right: none;
 }
