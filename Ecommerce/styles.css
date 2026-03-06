@@ -1279,4 +1279,49 @@ body {
     padding: 20px;
 
 }
+------- catalago -----
+.pantalla-centrada {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa; 
+    padding: 40px 20px;
+}
+.contenedor-catalago {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tarjeta-catalago{
+    background-color: white;
+    width: 100%;
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    
+    
+}
+.cabecera-catalago{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contenedor-centrado-tabla{
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+.contenedor-tabla{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.tarjeta-catalago{
+    background-color: white;
+    width: 100%;
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow:0 4px 15px rgba(0, 0, 0, 0.05) ;
+}
 
